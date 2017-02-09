@@ -5,10 +5,10 @@ We will fetch data from live URL, or if we have fresh copy of it in cache, use t
 
 ## Code Example
 
-$pdo = new PDO('mysql:host=localhost;dbname=some_database;charset=utf8mb4', 'root', '');
-$cachedRequest = new CachedRequest($pdo);
-$contents = $cachedRequest->getData('http://feeds.bbci.co.uk/news/rss.xml');
-echo $contents;
+$pdo = new PDO('mysql:host=localhost;dbname=some_database;charset=utf8mb4', 'root', ''); <br />
+$cachedRequest = new CachedRequest($pdo); <br />
+$contents = $cachedRequest->getData('http://feeds.bbci.co.uk/news/rss.xml'); <br />
+echo $contents; <br />
 
 ## Motivation
 
